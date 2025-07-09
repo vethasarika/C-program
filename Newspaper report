@@ -2,13 +2,17 @@
 
 int main() {
 
-  
+    int dead, injured, safe;
 
-    int dead = 2000;
+   
 
-    int injured = 3000;
+    scanf("%d", &dead);
 
-    int safe = 10000;
+    scanf("%d", &injured);
+
+    scanf("%d", &safe);
+
+    
 
     printf("TSUNAMI REPORT OF JAPAN\n");
 
