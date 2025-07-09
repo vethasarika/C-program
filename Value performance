@@ -1,9 +1,30 @@
 #include <stdio.h>
-int main()
-    {
-     int a = 4;
-     float b= 5.678;
-    printf("%d\n",a);
-    printf("%.2f\n",b);
+
+int main() {
+
+    int intVal;
+
+    float floatVal;
+
+   
+
+    scanf("%d", &intVal);
+
+    scanf("%f", &floatVal);
+
+   
+
+    printf("%d\n", intVal);
+
+    printf("%.2f\n", floatVal); 
+
     return 0;
-    }
+
+}
+
+    
+     
+
+
+    
+    
