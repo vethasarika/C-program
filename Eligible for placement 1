@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main() {
+
+    char name[50];
+
+    int semester, marks;
+
+   
+
+    scanf("%s", name);
+
+    scanf("%d", &semester);
+
+    scanf("%d", &marks);
+
+  
+
+    printf("Name of the Student:%s\n", name);
+
+    
+
+    if (semester == 1 && marks >= 75) {
+
+        printf("%s is Eligible for Placement\n", name);
+
+    } else {
+
+        printf("%s is Not Eligible for Placement\n", name);
+
+    }
+
+    return 0;
+
+}
+
+
+
+
+
+   
+
