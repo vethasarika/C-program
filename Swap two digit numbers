@@ -2,39 +2,41 @@
 
 int main() {
 
-    int num, tens, units;
-
-    
-
-    scanf("%d", &num);
+    int num;
 
    
 
+    scanf("%d", &num);
+
+ 
+
     if (num < 10) {
 
-      
+        printf("STDOUT\n");
 
-        printf("%d", num);
-
-    } else {
-
-      
-
-        while (num >= 100) {
-
-            num /= 10;
-
-        }
-
-        tens = num / 10;
-
-        units = num % 10;
-
-        
-
-        printf("%d%d", units, tens);
+        return 0;
 
     }
+
+ 
+
+    while (num >= 100) {
+
+        num /= 10;
+
+    }
+
+    
+
+    int first = num / 10;
+
+    int second = num % 10;
+
+    int swapped = second * 10 + first;
+
+    
+
+    printf("%d\n", swapped);
 
     return 0;
 
