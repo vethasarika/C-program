@@ -1,0 +1,58 @@
+#include <stdio.h>
+
+
+
+struct Calculator {
+
+    int number;
+
+    
+
+   
+
+    int (*getSquare)(int);
+
+};
+
+
+
+int calculateSquare(int n) {
+
+    return n * n;
+
+}
+
+int main() {
+
+    int input;
+
+    scanf("%d", &input);
+
+    
+
+    if (input < 1 || input > 9) {
+
+        printf("Invalid Input\n");
+
+        return 0;
+
+    }
+
+
+
+    struct Calculator calc;
+
+    calc.number = input;
+
+    calc.getSquare = calculateSquare; 
+
+    int square = calc.getSquare(calc.number);
+
+    printf("Square of %d is %d\n", calc.number, square);
+
+    return 0;
+
+}
+
+
+
