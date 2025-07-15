@@ -4,15 +4,17 @@ int main() {
 
     char name[50];
 
-    int semester, marks;
+    int arrears;
 
-   
+    int cgpa;
+
+  
 
     scanf("%s", name);
 
-    scanf("%d", &semester);
+    scanf("%d", &arrears);
 
-    scanf("%d", &marks);
+    scanf("%d", &cgpa);
 
   
 
@@ -20,7 +22,7 @@ int main() {
 
     
 
-    if (semester == 1 && marks >= 75) {
+    if ((arrears == 1 && cgpa > 70) || ((arrears == 1 || arrears == 2) && cgpa > 75)) {
 
         printf("%s is Eligible for Placement\n", name);
 
@@ -33,10 +35,3 @@ int main() {
     return 0;
 
 }
-
-
-
-
-
-   
-
