@@ -1,0 +1,47 @@
+#include <stdio.h>
+
+int isVowel(char ch) {
+
+  
+
+    ch = (ch >= 'A' && ch <= 'Z') ? ch + 32 : ch; 
+
+    return (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u');
+
+}
+
+int main() {
+
+    char str[1000], result[1000];
+
+    int i = 0, j = 0;
+
+    
+
+    fgets(str, sizeof(str), stdin);
+
+    
+
+    while (str[i] != '\0') {
+
+        if (!isVowel(str[i]) && str[i] != '\n') {
+
+            result[j++] = str[i];
+
+        }
+
+        i++;
+
+    }
+
+  
+
+    result[j] = '\0';
+
+   
+
+    printf("%s\n", result);
+
+    return 0;
+
+}
