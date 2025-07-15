@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int main() {
+
+    int num, temp, digit_sum = 0;
+
+  
+
+    scanf("%d", &num);
+
+    temp = num;
+
+    
+
+    while (temp > 0) {
+
+        digit_sum += temp % 10;
+
+        temp /= 10;
+
+    }
+
+ 
+
+    if (digit_sum != 0 && num % digit_sum == 0) {
+
+        printf("Harshad Number\n");
+
+    } else {
+
+        printf("Not Harshad Number\n");
+
+    }
+
+    return 0;
+
+}
